@@ -6,7 +6,6 @@ This appication is a simple calendar application that allows an employee or user
 # Screenshot
 
 
-
 # Link to deployed application
 https://mrramontorres.github.io/work-day-scheduler/index.html
 
