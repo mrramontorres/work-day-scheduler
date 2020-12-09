@@ -30,36 +30,29 @@
       <p id="currentDay" class="lead">currentDay text here</p>
     </header>
 
-
-    <!-- Container holds entire schedule -->
-    <!-- Row holds the hour, description, and save button -->
-    <!-- Hour changes color of timeblock -->
-    <!-- Description of activity is a form -->
-    <!-- Save button stores description int storage -->
-
-
     <div class="container">
-
-        <!-- Timeblocks go here -->
-        <div class="row">
-
-          <div class="col-2 hour">
-          <p> 0 AM </p>
-          </div>
-
-          <textarea class="col-8">
-          </textarea>
-
-          <div class="col-2 saveBtn">
-          <i class="  "> Icon </i>
-          </div>
-
-        </div>
+      <div class="row">Hello</div>
     </div>
+
+   <!-- Timeblocks go here -->
+    <div id="time-block" class="container">
+        <!-- Row holds the hour, description, and save button -->
+        <div class="row">
+          <!-- Hour changes color of timeblock -->
+          <hour class="col-2 hour"><span>0AM</span></hour>
+          <!-- Description of activity -->
+          <textarea class="col-8"></textarea>
+          <!-- Button stores description in local storage -->
+          <button class="col-2 saveBtn"><i class="fa fa-folder fa-3x"></i></button>
+        </div>
+      </div>
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
+    <script src="script.js"></script>
   
   </body>
 </html>
