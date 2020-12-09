@@ -30,19 +30,21 @@ textarea{
   border-radius: 15px;
 }
 
+/* Beginning Column */
 .row {
   white-space: pre-wrap;
   height: 80px;
   border-top: 1px solid white;;
 }
 
+/* Beginning Column */
 .hour {
-/*background-color: #ffffff; */
-  background-color: #dc0db2;
+  background-color: #ffffff;
   color: #000000;
   border-top: 1px dashed #000000;
 }
 
+/* Middle Column */
 .past {
   background-color: #d3d3d3;
   color: white;
@@ -58,6 +60,7 @@ textarea{
   color: white;
 }
 
+/* Final Column */
 .saveBtn {
   border-left: 1px solid black;
   border-top-right-radius: 15px;

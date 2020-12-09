@@ -27,21 +27,33 @@
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead"></p>
+      <p id="currentDay" class="lead">currentDay text here</p>
     </header>
 
+
+    <!-- Container holds entire schedule -->
+    <!-- Row holds the hour, description, and save button -->
+    <!-- Hour changes color of timeblock -->
+    <!-- Description of activity is a form -->
+    <!-- Save button stores description int storage -->
+
+
     <div class="container">
+
         <!-- Timeblocks go here -->
         <div class="row">
-          <div class="col-1 hour">
-            hour
+
+          <div class="col-2 hour">
+          <p> 0 AM </p>
           </div>
-          <div class="col-10 sm">
-            textArea
+
+          <textarea class="col-8">
+          </textarea>
+
+          <div class="col-2 saveBtn">
+          <i class="  "> Icon </i>
           </div>
-          <div class="col-1 sm">
-            saveBtn
-          </div>
+
         </div>
     </div>
 
@@ -51,3 +63,4 @@
   
   </body>
 </html>
+
