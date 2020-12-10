@@ -21,42 +21,30 @@
     <link rel="stylesheet" href="style.css" />
     <title>Work Day Scheduler</title>
   </head>
-
   <body>
-
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead">currentDay</p>
     </header>
-
     <div class="container">
-
         <div class="time-block row timeBlockDiv">
             <div class="col-2 hour">
               <span>HH</span>
             </div>
             <textarea class="col-8 time"></textarea>
-            <button class="col-2 saveBtn"><i class="fa fa-folder fa-2x"></i></button>
+            <button onclick="saveText()" class="col-2 saveBtn"><i class="fa fa-folder fa-2x"></i></button>
         </div>
-
         <section id="target1"></section>
-        
     </div>
-
     <footer>
     <br>
     <br>
     <br>
     </footer>
-
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-
     <script src="script.js"></script>
-  
   </body>
 </html>
 

@@ -1,10 +1,10 @@
 // Sets the current day of the week, month, and date
 document.getElementById("currentDay").innerHTML = moment().format("dddd, MMMM Do");
 
-// Sets current hour
-var hourNow = 10;
-//var hourNow = moment().format("H");
-console.log("current time is: " + hourNow);
+// TODO fix hour proccessing
+var hourNow = 12; 
+// var hourNow = moment().format("H");
+console.log("Current time variable is: " + hourNow);
 
 // Array holds all of the hours available
 var hoursList = ["9","10","11","12","13","14","15","16","17","18"];
@@ -21,24 +21,44 @@ const init = function(){
         //console.log(divModified);
         var t2 = t1.appendChild(divModified);
         // Adds the appropriate hour from the hourArray
-        console.log(hoursList[i]);
-
+        //console.log(hoursList[i]);
         t2.querySelector("span").innerHTML = hoursList[i];
-
+            /* TEST TIME CONSOLE
+            console.log("Current hour: " + hourNow);
+            console.log("past: " + (hourNow > hoursList[i])); //past
+            console.log("present: " + (hourNow == hoursList[i])); //present
+            console.log("future: " + (hourNow < hoursList[i])); //future
+            */
+       // Adds the approprite color coding for the time baesd on current hour of the day
         if(hourNow < hoursList[i]) {
-            //console.log(hourNow < hoursList[i]);
             t2.querySelector(".time").classList.add("future");
-        }else if (hourNow == hoursList[i]){
+        }else if (hourNow == hoursList[i]) {
             t2.querySelector(".time").classList.add("present");
-        }else {
+        }else if (hourNow > hoursList[i]){
             t2.querySelector(".time").classList.add("past");
         };
         console.log(t2);
     }
+    //TODO move this from javascript to style sheet
+    div1.style.display = "none";
+    
 }
+
+
+
+//TODO listen for a save button click
+
+//TODO after click select textarea to save in local storage
+
+//TODO capture any text
+var textContent = $('#textarea');
+console.log(textContent);
 
 document.addEventListener("DOMContentLoaded", init)
 
+
+
+//CODE NOT USED
 /*$.each(hoursList, function(i){
     console.log(i);
     /*var newRowDiv = $( ".row" ).clone();
