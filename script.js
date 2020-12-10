@@ -1,4 +1,4 @@
-$(document).ready(function() {
+
 
     // Array holds all of the hours available
     var hoursList = [
@@ -14,8 +14,8 @@ $(document).ready(function() {
         "6PM"
         ];
 
-    console.log(hoursList);
+    for (var i = 0; i < 2; i++) {
+    var something = $( ".row" ).clone();
+    something.appendTo(".container");
+    }
 
-    $( ".container" ).clone().prependTo( ".row" );
-    
-});

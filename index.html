@@ -30,16 +30,13 @@
       <p id="currentDay" class="lead">currentDay text here</p>
     </header>
 
-    <div class="container">
-      <div class="row">Hello</div>
-    </div>
-
    <!-- Timeblocks go here -->
-    <div id="time-block" class="container">
+    <div class="container">
         <!-- Row holds the hour, description, and save button -->
         <div class="row">
           <!-- Hour changes color of timeblock -->
-          <hour class="col-2 hour"><span>0AM</span></hour>
+          <div class="col-2 hour">
+            <span id="hour">0AM </span></div>
           <!-- Description of activity -->
           <textarea class="col-8"></textarea>
           <!-- Button stores description in local storage -->
@@ -47,7 +44,7 @@
         </div>
       </div>
 
-
+      <div class="container insert"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
