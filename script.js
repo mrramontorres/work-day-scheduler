@@ -16,7 +16,11 @@ const init = function(){
     t1 = document.getElementById("target1");
     div1 = document.querySelector(".timeBlockDiv");
     for(let i=0; i<hoursList.length-1; i++){
-        t1.appendChild(div1.cloneNode(true));
+        var divModified = div1.cloneNode(true);
+        console.log(divModified);
+        var t2 = t1.appendChild(divModified);
+        t2.querySelector(".hour").innerHTML = hoursList[i];
+        console.log(t2);
     }
 }
 
