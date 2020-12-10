@@ -7,7 +7,7 @@ console.log("current time is: " + hourNow);
 
 // Array holds all of the hours available
 var hoursList = ["9AM","10AM","11AM","12PM","1PM","2PM","3PM","4PM","5PM","6PM"];
-console.log("hoursList array index read is: " + hoursList.length);
+//console.log("hoursList array index read is: " + hoursList.length);
 
 //Research the below code from: https://www.youtube.com/watch?v=zjYgz50E0mA&ab_channel=SteveGriffith
 // Function that initiizes the creation of new timeblock divs
@@ -17,9 +17,15 @@ const init = function(){
     div1 = document.querySelector(".timeBlockDiv");
     for(let i=0; i<hoursList.length-1; i++){
         var divModified = div1.cloneNode(true);
-        console.log(divModified);
+        //console.log(divModified);
         var t2 = t1.appendChild(divModified);
-        t2.querySelector(".hour").innerHTML = hoursList[i];
+        // Adds the appropriate hour from the hourArray
+        console.log(hoursList[i]);
+        if(hourNow < hoursList[i]){
+            console.log("the if statment is: " + (hourNow < hoursList[i]));
+            t2.classList.replace("time","past");
+            t2.querySelector("span").innerHTML = hoursList[i];
+        };
         console.log(t2);
     }
 }
