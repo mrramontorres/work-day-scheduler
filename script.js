@@ -21,10 +21,14 @@ const init = function(){
         var t2 = t1.appendChild(divModified);
         // Adds the appropriate hour from the hourArray
         console.log(hoursList[i]);
+
+        t2.querySelector("span").innerHTML = hoursList[i];
+
         if(hourNow < hoursList[i]){
-            console.log("the if statment is: " + (hourNow < hoursList[i]));
-            t2.classList.replace("time","past");
-            t2.querySelector("span").innerHTML = hoursList[i];
+            console.log(hourNow < hoursList[i]);
+            
+        }else{
+            t2.querySelector(".time").classList.add("past");
         };
         console.log(t2);
     }
@@ -40,5 +44,10 @@ document.addEventListener("DOMContentLoaded", init)
     console.log(hoursList[i]);
     $(".container").append(htmlDiv);
     
+
+               console.log("the if statment is: " + (hourNow < hoursList[i]));
+            t2.className("time","past");
+
+
 });*/
 
