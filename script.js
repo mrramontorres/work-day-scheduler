@@ -2,11 +2,12 @@
 document.getElementById("currentDay").innerHTML = moment().format("dddd, MMMM Do");
 
 // Sets current hour
-var hourNow = moment().format("hA");
+var hourNow = 10;
+//var hourNow = moment().format("H");
 console.log("current time is: " + hourNow);
 
 // Array holds all of the hours available
-var hoursList = ["9AM","10AM","11AM","12PM","1PM","2PM","3PM","4PM","5PM","6PM"];
+var hoursList = ["9","10","11","12","13","14","15","16","17","18"];
 //console.log("hoursList array index read is: " + hoursList.length);
 
 //Research the below code from: https://www.youtube.com/watch?v=zjYgz50E0mA&ab_channel=SteveGriffith
@@ -24,10 +25,12 @@ const init = function(){
 
         t2.querySelector("span").innerHTML = hoursList[i];
 
-        if(hourNow < hoursList[i]){
-            console.log(hourNow < hoursList[i]);
-            
-        }else{
+        if(hourNow < hoursList[i]) {
+            //console.log(hourNow < hoursList[i]);
+            t2.querySelector(".time").classList.add("future");
+        }else if (hourNow == hoursList[i]){
+            t2.querySelector(".time").classList.add("present");
+        }else {
             t2.querySelector(".time").classList.add("past");
         };
         console.log(t2);
