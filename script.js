@@ -38,12 +38,16 @@ const init = function(){
             t2.querySelector(".time").classList.add("past");
         };
         console.log(t2);
+
     }
     //TODO move this from javascript to style sheet
     div1.style.display = "none";
-    
+
 }
 
+function saveText(){
+    alert("something was clicked");
+}
 
 
 //TODO listen for a save button click
@@ -51,9 +55,8 @@ const init = function(){
 //TODO after click select textarea to save in local storage
 
 //TODO capture any text
-var textContent = $('#textarea');
-console.log(textContent);
 
+//Not sure I think this waits until the page content has loaded
 document.addEventListener("DOMContentLoaded", init)
 
 
