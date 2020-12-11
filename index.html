@@ -30,10 +30,11 @@
     <div class="container">
         <div class="time-block row timeBlockDiv">
             <div class="col-2 hour">
-              <span>HH</span>
+              <span class="thisISit">HH</span>
             </div>
-            <textarea class="col-8 time"></textarea>
-            <button onclick="saveText()" class="col-2 saveBtn"><i class="fa fa-folder fa-2x"></i></button>
+              <textarea id="myText" name="agenda" class="col-8 time corn"> </textarea>
+              <button onclick="saveText(this)" class="col-2 saveBtn"><i class="fa fa-folder fa-2x"></i></button>  
+            
         </div>
         <section id="target1"></section>
     </div>
