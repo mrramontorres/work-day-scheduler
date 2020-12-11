@@ -1,5 +1,5 @@
 // Sets the current day of the week, month, and date
-document.getElementById("currentDay").innerHTML = moment().format("dddd, MMMM Do");
+document.getElementById("currentDay").innerHTML = moment().format("dddd, MMMM Do, HH:mm");
 
 // TODO fix hour proccessing
 //var hourNow = 12; 
